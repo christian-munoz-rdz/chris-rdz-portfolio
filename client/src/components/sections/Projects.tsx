@@ -44,11 +44,20 @@ export default function Projects() {
                 key={repo.id}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
+                whileHover={{ scale: 1.02 }}
+                transition={{ 
+                  duration: 0.2,
+                  scale: {
+                    type: "spring",
+                    stiffness: 300,
+                    damping: 20
+                  }
+                }}
                 viewport={{ once: true }}
               >
-                <Card className="h-full flex flex-col">
-                  <CardHeader>
-                    <CardTitle className="flex items-center gap-2">
+                <Card className="h-full flex flex-col hover:shadow-lg transition-shadow duration-300 bg-card">
+                  <CardHeader className="relative group">
+                    <CardTitle className="flex items-center gap-2 group-hover:text-primary transition-colors">
                       <GithubIcon className="h-5 w-5" />
                       {repo.name}
                     </CardTitle>
@@ -57,17 +66,25 @@ export default function Projects() {
                     <p className="text-muted-foreground">
                       {repo.description || "No description provided"}
                     </p>
+                    {repo.language && (
+                      <div className="mt-4 inline-flex items-center px-3 py-1 rounded-full text-sm bg-primary/10 text-primary">
+                        {repo.language}
+                      </div>
+                    )}
                   </CardContent>
                   <CardFooter className="flex gap-4">
                     <Button
                       variant="outline"
                       onClick={() => window.open(repo.html_url, '_blank')}
+                      className="hover:bg-primary hover:text-primary-foreground transition-colors"
                     >
+                      <GithubIcon className="h-4 w-4 mr-2" />
                       View Source
                     </Button>
                     {repo.homepage && (
                       <Button
                         onClick={() => window.open(repo.homepage, '_blank')}
+                        className="hover:scale-105 transition-transform"
                       >
                         <ExternalLink className="h-4 w-4 mr-2" />
                         Live Demo
