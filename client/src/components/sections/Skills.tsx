@@ -2,14 +2,51 @@ import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { SiReact, SiTypescript, SiNodedotjs, SiTailwindcss, SiGit, SiDocker } from "react-icons/si";
 import { ResponsiveContainer, RadarChart, PolarGrid, PolarAngleAxis, Radar } from 'recharts';
+import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
 
 const skills = [
-  { name: "React", icon: SiReact, color: "text-blue-500", level: 90 },
-  { name: "TypeScript", icon: SiTypescript, color: "text-blue-600", level: 85 },
-  { name: "Node.js", icon: SiNodedotjs, color: "text-green-600", level: 80 },
-  { name: "Tailwind CSS", icon: SiTailwindcss, color: "text-cyan-500", level: 95 },
-  { name: "Git", icon: SiGit, color: "text-orange-600", level: 85 },
-  { name: "Docker", icon: SiDocker, color: "text-blue-700", level: 75 },
+  {
+    name: "React",
+    icon: SiReact,
+    color: "text-blue-500",
+    level: 90,
+    description: "Expert in building complex applications with React, including hooks, context, and performance optimization."
+  },
+  {
+    name: "TypeScript",
+    icon: SiTypescript,
+    color: "text-blue-600",
+    level: 85,
+    description: "Strong TypeScript skills with focus on type safety, generics, and advanced type features."
+  },
+  {
+    name: "Node.js",
+    icon: SiNodedotjs,
+    color: "text-green-600",
+    level: 80,
+    description: "Experienced in building scalable backend services with Node.js and Express."
+  },
+  {
+    name: "Tailwind CSS",
+    icon: SiTailwindcss,
+    color: "text-cyan-500",
+    level: 95,
+    description: "Advanced knowledge of Tailwind CSS for building responsive and maintainable UIs."
+  },
+  {
+    name: "Git",
+    icon: SiGit,
+    color: "text-orange-600",
+    level: 85,
+    description: "Proficient in version control with Git, including advanced branching and CI/CD workflows."
+  },
+  {
+    name: "Docker",
+    icon: SiDocker,
+    color: "text-blue-700",
+    level: 75,
+    description: "Experienced in containerization and orchestration with Docker and Docker Compose."
+  },
 ];
 
 type ChartData = {
@@ -92,15 +129,36 @@ export default function Skills() {
           >
             {skills.map((skill) => (
               <motion.div key={skill.name} variants={item}>
-                <Card className="h-full group hover:shadow-lg transition-all duration-300">
-                  <CardContent className="p-6 flex flex-col items-center text-center">
-                    <skill.icon className={`w-12 h-12 ${skill.color} mb-4 transition-transform duration-300 group-hover:scale-110`} />
-                    <h3 className="text-lg font-semibold">{skill.name}</h3>
-                    <div className="mt-2 text-sm text-muted-foreground">
-                      Proficiency: {skill.level}%
+                <HoverCard>
+                  <HoverCardTrigger asChild>
+                    <Card className="h-full group hover:shadow-lg transition-all duration-300 cursor-pointer">
+                      <CardContent className="p-6 flex flex-col items-center text-center">
+                        <skill.icon className={`w-12 h-12 ${skill.color} mb-4 transition-transform duration-300 group-hover:scale-110`} />
+                        <h3 className="text-lg font-semibold">{skill.name}</h3>
+                        <div className="mt-2 text-sm text-muted-foreground">
+                          Proficiency: {skill.level}%
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </HoverCardTrigger>
+                  <HoverCardContent className="w-80">
+                    <div className="space-y-2">
+                      <div className="flex items-center gap-2">
+                        <skill.icon className={`w-5 h-5 ${skill.color}`} />
+                        <h4 className="font-semibold">{skill.name}</h4>
+                      </div>
+                      <div className="text-sm text-muted-foreground">
+                        {skill.description}
+                      </div>
+                      <div className="h-2 bg-primary/20 rounded-full overflow-hidden">
+                        <div 
+                          className="h-full bg-primary transition-all duration-500"
+                          style={{ width: `${skill.level}%` }}
+                        />
+                      </div>
                     </div>
-                  </CardContent>
-                </Card>
+                  </HoverCardContent>
+                </HoverCard>
               </motion.div>
             ))}
           </motion.div>
