@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Hero() {
@@ -14,7 +14,7 @@ export default function Hero() {
         >
           Hi, I'm Ryan Hoffman
         </motion.h1>
-        
+
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -28,7 +28,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className="flex justify-center gap-4"
+          className="flex flex-wrap justify-center gap-4"
         >
           <Button
             onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
@@ -42,6 +42,15 @@ export default function Hero() {
             size="lg"
           >
             View Projects
+          </Button>
+          <Button
+            variant="outline"
+            size="lg"
+            onClick={() => window.open('/resume.pdf', '_blank')}
+            className="gap-2"
+          >
+            <Download className="h-4 w-4" />
+            Download Resume
           </Button>
         </motion.div>
 
