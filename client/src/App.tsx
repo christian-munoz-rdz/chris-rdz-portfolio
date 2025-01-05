@@ -8,15 +8,14 @@ import Projects from "@/components/sections/Projects";
 import Testimonials from "@/components/sections/Testimonials";
 import Contact from "@/components/sections/Contact";
 import { Toaster } from "@/components/ui/toaster";
+import { pageTransition } from "@/lib/animations";
 
 function App() {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
       <motion.main 
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.5 }}
+        {...pageTransition}
         className="container mx-auto px-4 py-8"
       >
         <Hero />
