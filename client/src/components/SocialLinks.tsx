@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { SiGithub, SiLinkedin, SiTwitter } from "react-icons/si";
+import { SiGithub, SiLinkedin, SiX } from "react-icons/si";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
 
 const socialLinks = [
@@ -18,10 +18,10 @@ const socialLinks = [
     description: "Connect with me professionally"
   },
   {
-    name: "Twitter",
-    icon: SiTwitter,
+    name: "X (Twitter)",
+    icon: SiX,
     href: "https://twitter.com/ryanhoffman",
-    color: "hover:text-[#1da1f2]",
+    color: "hover:text-[#000000]",
     description: "Follow me for tech insights"
   }
 ];
