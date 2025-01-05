@@ -8,6 +8,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import SocialLinks from "@/components/SocialLinks";
 
 const navItems = [
   { name: "Home", href: "#home" },
@@ -62,11 +63,13 @@ export default function Navigation() {
               {item.name}
             </button>
           ))}
+          <SocialLinks />
           <ThemeToggle />
         </div>
 
         {/* Mobile Navigation */}
         <div className="md:hidden flex items-center gap-2">
+          <SocialLinks />
           <ThemeToggle />
           <Sheet>
             <SheetTrigger asChild>
