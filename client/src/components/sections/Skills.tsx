@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
-import { SiReact, SiTypescript, SiNodedotjs, SiTailwindcss, SiGit, SiDocker } from "react-icons/si";
+import { SiReact, SiTypescript, SiNodedotjs, SiPython, SiGit } from "react-icons/si";
+import { DiJava } from "react-icons/di";
 import { ResponsiveContainer, RadarChart, PolarGrid, PolarAngleAxis, Radar } from 'recharts';
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
 
@@ -27,11 +28,11 @@ const skills = [
     description: "Experienced in building scalable backend services with Node.js and Express."
   },
   {
-    name: "Tailwind CSS",
-    icon: SiTailwindcss,
-    color: "text-cyan-500",
-    level: 95,
-    description: "Advanced knowledge of Tailwind CSS for building responsive and maintainable UIs."
+    name: "Python",
+    icon: SiPython,
+    color: "text-yellow-500",
+    level: 92,
+    description: "Advanced Python development with expertise in Django, Flask, and data processing."
   },
   {
     name: "Git",
@@ -41,11 +42,11 @@ const skills = [
     description: "Proficient in version control with Git, including advanced branching and CI/CD workflows."
   },
   {
-    name: "Docker",
-    icon: SiDocker,
-    color: "text-blue-700",
-    level: 75,
-    description: "Experienced in containerization and orchestration with Docker and Docker Compose."
+    name: "Java",
+    icon: DiJava,
+    color: "text-red-500",
+    level: 78,
+    description: "Strong foundation in Java development, including Spring Boot and enterprise applications."
   },
 ];
 
@@ -151,7 +152,7 @@ export default function Skills() {
                         {skill.description}
                       </div>
                       <div className="h-2 bg-primary/20 rounded-full overflow-hidden">
-                        <div 
+                        <div
                           className="h-full bg-primary transition-all duration-500"
                           style={{ width: `${skill.level}%` }}
                         />
