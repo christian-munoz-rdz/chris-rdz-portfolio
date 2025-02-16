@@ -9,6 +9,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 export default defineConfig({
   plugins: [react(), runtimeErrorOverlay(), themePlugin()],
+  base: "/chris-rdz-portfolio/", // This is the subpath your app will be deployed to 
   resolve: {
     alias: {
       "@db": path.resolve(__dirname, "db"),
