@@ -8,7 +8,7 @@ export function registerRoutes(app: Express): Server {
   app.get("/api/github/repos", async (req, res) => {
     try {
       const response = await fetch(
-        "https://api.github.com/users/ryanhoffman/repos?sort=stars&per_page=6",
+        "https://api.github.com/users/christian-munoz-rdz/repos?sort=stars&per_page=1",
         {
           headers: {
             Accept: "application/vnd.github.v3+json",

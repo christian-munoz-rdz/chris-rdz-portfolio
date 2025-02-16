@@ -13,7 +13,7 @@ const repoSchema = z.object({
 type Repo = z.infer<typeof repoSchema>;
 
 export async function getGithubRepos(): Promise<Repo[]> {
-  const response = await fetch('https://api.github.com/users/ryanhoffman/repos?sort=stars&per_page=6');
+  const response = await fetch('https://api.github.com/users/christian-munoz-rdz/repos?type=public&per_page=12');
   
   if (!response.ok) {
     throw new Error('Failed to fetch GitHub repositories');
