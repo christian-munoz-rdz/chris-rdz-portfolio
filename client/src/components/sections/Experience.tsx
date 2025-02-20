@@ -6,30 +6,12 @@ import { Calendar, Building2 } from "lucide-react";
 const experiences = [
   {
     id: 1,
-    company: "Tech Innovations Inc.",
-    position: "Senior Full Stack Developer",
-    period: "2021 - Present",
-    location: "San Francisco, CA",
-    description: "Led development of scalable web applications using React and Node.js. Implemented CI/CD pipelines and improved application performance by 40%.",
-    skills: ["React", "Node.js", "AWS", "Docker"]
-  },
-  {
-    id: 2,
-    company: "Digital Solutions Ltd",
-    position: "Frontend Developer",
-    period: "2019 - 2021",
-    location: "New York, NY",
-    description: "Developed responsive web applications and implemented modern UI/UX practices. Collaborated with design team to create pixel-perfect interfaces.",
-    skills: ["React", "TypeScript", "Tailwind CSS"]
-  },
-  {
-    id: 3,
-    company: "StartUp Hub",
-    position: "Junior Developer",
-    period: "2018 - 2019",
-    location: "Boston, MA",
-    description: "Contributed to multiple client projects and gained extensive experience in modern web technologies. Participated in agile development processes.",
-    skills: ["JavaScript", "HTML/CSS", "Git"]
+    company: "IBM",
+    position: "Application Developer Intern",
+    period: "September 2024 - Present",
+    location: "Guadalajara, Jalisco, MX.",
+    description: "Development and maintenance of frontend solutions using React, TypeScript, and Material UI, implementing clean and intuitive interfaces. Working in an agile environment following the Scrum methodology, collaborating with the team to plan sprints, prioritize tasks, and ensure continuous value delivery while maintaining an organized and collaborative workflow.",
+    skills: ["React", "Node.js", "TypeScript", "Git/Github", "Material UI"]
   }
 ];
 

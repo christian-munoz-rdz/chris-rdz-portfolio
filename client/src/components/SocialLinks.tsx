@@ -6,21 +6,21 @@ const socialLinks = [
   {
     name: "GitHub",
     icon: SiGithub,
-    href: "https://github.com/ryanhoffman",
+    href: "https://github.com/christian-munoz-rdz",
     color: "hover:text-[#333]",
     description: "Check out my open source projects"
   },
   {
     name: "LinkedIn",
     icon: SiLinkedin,
-    href: "https://linkedin.com/in/ryanhoffman",
+    href: "https://www.linkedin.com/in/christian-munoz-rdz",
     color: "hover:text-[#0077b5]",
     description: "Connect with me professionally"
   },
   {
     name: "X (Twitter)",
     icon: SiX,
-    href: "https://twitter.com/ryanhoffman",
+    href: "https://x.com/StockFish098",
     color: "hover:text-[#000000]",
     description: "Follow me for tech insights"
   }
