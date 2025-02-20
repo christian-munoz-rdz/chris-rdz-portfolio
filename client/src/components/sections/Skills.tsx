@@ -10,14 +10,14 @@ const skills = [
     name: "React",
     icon: SiReact,
     color: "text-blue-500",
-    level: 90,
+    level: 98,
     description: "Expert in building complex applications with React, including hooks, context, and performance optimization."
   },
   {
     name: "TypeScript",
     icon: SiTypescript,
     color: "text-blue-600",
-    level: 85,
+    level: 90,
     description: "Strong TypeScript skills with focus on type safety, generics, and advanced type features."
   },
   {
@@ -31,7 +31,7 @@ const skills = [
     name: "Python",
     icon: SiPython,
     color: "text-yellow-500",
-    level: 92,
+    level: 80,
     description: "Advanced Python development with expertise in Django, Flask, and data processing."
   },
   {
@@ -45,7 +45,7 @@ const skills = [
     name: "Java",
     icon: DiJava,
     color: "text-red-500",
-    level: 78,
+    level: 70,
     description: "Strong foundation in Java development, including Spring Boot and enterprise applications."
   },
 ];

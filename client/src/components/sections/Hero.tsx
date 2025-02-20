@@ -12,7 +12,7 @@ export default function Hero() {
           transition={{ duration: 0.5 }}
           className="text-4xl md:text-6xl font-bold mb-4"
         >
-          Hi, I'm Ryan Hoffman
+          Hi, I'm Christian Muñoz
         </motion.h1>
 
         <motion.p
@@ -21,7 +21,7 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-xl md:text-2xl text-muted-foreground mb-8"
         >
-          Full-Stack Web Developer
+          Software Developer
         </motion.p>
 
         <motion.div
@@ -31,14 +31,7 @@ export default function Hero() {
           className="flex flex-wrap justify-center gap-4"
         >
           <Button
-            onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
-            size="lg"
-          >
-            Contact Me
-          </Button>
-          <Button
             onClick={() => document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' })}
-            variant="outline"
             size="lg"
           >
             View Projects
@@ -46,7 +39,7 @@ export default function Hero() {
           <Button
             variant="outline"
             size="lg"
-            onClick={() => window.open('/resume.pdf', '_blank')}
+            onClick={() => window.open('https://drive.google.com/file/d/1iOo8NA4fdoy-4uy1E7-282PikmAZb1QZ/view?usp=sharing', '_blank')}
             className="gap-2"
           >
             <Download className="h-4 w-4" />
