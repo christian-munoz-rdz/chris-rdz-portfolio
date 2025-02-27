@@ -16,8 +16,8 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div>
             <img
-              src="../../../assets/myphoto.jpg"
-              alt="Ryan Hoffman"
+              src=""
+              alt="myphotho"
               className="rounded-lg shadow-lg w-full max-w-md mx-auto"
             />
           </div>

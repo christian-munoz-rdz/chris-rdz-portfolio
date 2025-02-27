@@ -39,7 +39,7 @@ export default function Hero() {
           <Button
             variant="outline"
             size="lg"
-            onClick={() => window.open('https://drive.google.com/file/d/1iOo8NA4fdoy-4uy1E7-282PikmAZb1QZ/view?usp=sharing', '_blank')}
+            onClick={() => window.open('', '_blank')}
             className="gap-2"
           >
             <Download className="h-4 w-4" />
