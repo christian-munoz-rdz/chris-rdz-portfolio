@@ -37,9 +37,9 @@ const deployedProjects = [
   },
   {
     id: 4,
-    title: "Portfolio Website",
+    title: "PickerBoxd",
     description: "Responsive portfolio showcasing projects with modern design and animations",
-    url: "https://portfolio-demo.github.io",
+    url: "https://christian-munoz-rdz.github.io/pickerboxd/",
     image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800",
     tech: ["React", "Framer Motion", "Tailwind", "TypeScript"]
   },
