@@ -29,9 +29,9 @@ const deployedProjects = [
   },
   {
     id: 3,
-    title: "Weather Dashboard",
+    title: "Bullet Hell Js",
     description: "Beautiful weather app with forecasts, maps, and location-based insights",
-    url: "https://weather-dashboard-demo.vercel.app",
+    url: "https://christian-munoz-rdz.github.io/Js-Bulltet-Hell/",
     image: "https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800",
     tech: ["React", "OpenWeather API", "Chart.js", "CSS3"]
   },
