@@ -63,7 +63,7 @@ export default function ProjectPreviews() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl font-bold mb-4">Live Project Previews</h2>
+          <h2 className="text-3xl font-bold mb-4">Main projects</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Explore my deployed applications and see them in action. Each project demonstrates 
             different technologies and approaches to solving real-world problems.
