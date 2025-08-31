@@ -42,14 +42,6 @@ const deployedProjects = [
     url: "https://christian-munoz-rdz.github.io/pickerboxd/",
     image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800",
     tech: ["React", "Framer Motion", "Tailwind", "TypeScript"]
-  },
-  {
-    id: 5,
-    title: "Social Media Dashboard",
-    description: "Analytics dashboard for social media management with data visualization",
-    url: "https://social-dashboard-demo.netlify.app",
-    image: "https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800",
-    tech: ["React", "D3.js", "Express", "PostgreSQL"]
   }
 ];
 
