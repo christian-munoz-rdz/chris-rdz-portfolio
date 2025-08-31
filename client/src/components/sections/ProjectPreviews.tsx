@@ -15,7 +15,7 @@ const deployedProjects = [
     id: 1,
     title: "E-Commerce Platform",
     description: "Full-stack e-commerce solution with React, Node.js, and Stripe integration",
-    url: "https://ecommerce-demo.vercel.app",
+    url: "https://christian-munoz-rdz.github.io/my-financial-app/",
     image: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800",
     tech: ["React", "Node.js", "MongoDB", "Stripe"]
   },
