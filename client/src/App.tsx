@@ -4,6 +4,7 @@ import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
 import Skills from "@/components/sections/Skills";
 import Experience from "@/components/sections/Experience";
+import ProjectPreviews from "@/components/sections/ProjectPreviews";
 import Projects from "@/components/sections/Projects";
 import Contact from "@/components/sections/Contact";
 import { Toaster } from "@/components/ui/toaster";
@@ -21,6 +22,7 @@ function App() {
         <About />
         <Skills />
         <Experience />
+        <ProjectPreviews />
         <Projects />
       </motion.main>
       <Toaster />
