@@ -13,7 +13,7 @@ import {
 const deployedProjects = [
   {
     id: 1,
-    title: "E-Commerce Platform",
+    title: "My Own Financial Management App",
     description: "Full-stack e-commerce solution with React, Node.js, and Stripe integration",
     url: "https://christian-munoz-rdz.github.io/my-financial-app/",
     image: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800",
@@ -21,9 +21,9 @@ const deployedProjects = [
   },
   {
     id: 2,
-    title: "Task Management App",
+    title: "Creative Coding Projects",
     description: "Collaborative task management with real-time updates and team features",
-    url: "https://taskmanager-demo.netlify.app",
+    url: "https://christian-munoz-rdz.github.io/creative-coding-projects/index.html",
     image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800",
     tech: ["React", "TypeScript", "Firebase", "Tailwind"]
   },
