@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
-import { SiReact, SiTypescript, SiNodedotjs, SiPython, SiGit } from "react-icons/si";
+import { SiReact, SiTypescript, SiNodedotjs, SiPython, SiGit, SiFlutter, SiPostgresql, SiDocker } from "react-icons/si";
 import { DiJava } from "react-icons/di";
 import { ResponsiveContainer, RadarChart, PolarGrid, PolarAngleAxis, Radar } from 'recharts';
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
@@ -48,6 +48,20 @@ const skills = [
     level: 70,
     description: "Strong foundation in Java development, including Spring Boot and enterprise applications."
   },
+  {
+    name: "SQL",
+    icon: SiPostgresql,
+    color: "text-blue-500",
+    level: 70,
+    description: "Experienced in SQL for DML operations, building CRUDs, and working with ORMs.",
+  },
+  {
+    name: "Docker",
+    icon: SiDocker,
+    color: "text-blue-500",
+    level: 70,
+    description: "Experienced in Docker for containerization and deployment."
+  }
 ];
 
 type ChartData = {
@@ -79,18 +93,18 @@ export default function Skills() {
   }));
 
   return (
-    <section id="skills" className="py-20 bg-muted/30">
-      <div className="container mx-auto">
+    <section id="skills" className="py-20 bg-muted/30 min-h-screen flex items-center">
+      <div className="container mx-auto px-4 max-w-7xl">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="text-3xl font-bold text-center mb-12"
         >
-          Skills & Technologies
+          Main Technologies
         </motion.h2>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-16 max-w-6xl mx-auto items-center">
           {/* Radar Chart */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
@@ -136,9 +150,6 @@ export default function Skills() {
                       <CardContent className="p-6 flex flex-col items-center text-center">
                         <skill.icon className={`w-12 h-12 ${skill.color} mb-4 transition-transform duration-300 group-hover:scale-110`} />
                         <h3 className="text-lg font-semibold">{skill.name}</h3>
-                        <div className="mt-2 text-sm text-muted-foreground">
-                          Proficiency: {skill.level}%
-                        </div>
                       </CardContent>
                     </Card>
                   </HoverCardTrigger>
@@ -156,6 +167,9 @@ export default function Skills() {
                           className="h-full bg-primary transition-all duration-500"
                           style={{ width: `${skill.level}%` }}
                         />
+                      </div>
+                      <div className="text-xs text-muted-foreground">
+                        Proficiency: {skill.level}%
                       </div>
                     </div>
                   </HoverCardContent>

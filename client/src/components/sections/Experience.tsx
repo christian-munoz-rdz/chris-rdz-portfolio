@@ -8,11 +8,21 @@ const experiences = [
     id: 1,
     company: "IBM",
     position: "Application Developer Intern",
-    period: "September 2024 - Present",
+    period: "September 2024 - June 2025",
     location: "Guadalajara, Jalisco, MX.",
     description: "Development and maintenance of frontend solutions using React, TypeScript, and Material UI, implementing clean and intuitive interfaces. Working in an agile environment following the Scrum methodology, collaborating with the team to plan sprints, prioritize tasks, and ensure continuous value delivery while maintaining an organized and collaborative workflow.",
-    skills: ["React", "Node.js", "TypeScript", "Git/Github", "Material UI"]
+    skills: ["React", "Node.js", "TypeScript", "Git/Github", "Material UI", "Java", "Spring Boot", "SQL"]
+  },
+  {
+    id: 2,
+    company: "PayStand",
+    position: "Full Stack Engineer Jr.",
+    period: "June 2025 - Present",
+    location: "Guadalajara, Jalisco, MX.",
+    description: "Development and maintenance of frontend solutions using React, TypeScript, and Material UI, implementing clean and intuitive interfaces. Working in an agile environment following the Scrum methodology, collaborating with the team to plan sprints, prioritize tasks, and ensure continuous value delivery while maintaining an organized and collaborative workflow.",
+    skills: ["JavaScript", "Node.js", "Python", "Frappe", "Git/GitLab", "MySQL", "PostgreSQL", "Docker", "Temporal.io"]
   }
+
 ];
 
 export default function Experience() {

@@ -21,7 +21,7 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-xl md:text-2xl text-muted-foreground mb-8"
         >
-          Software Developer
+          Full Stack Software Developer
         </motion.p>
 
         <motion.div
@@ -31,10 +31,10 @@ export default function Hero() {
           className="flex flex-wrap justify-center gap-4"
         >
           <Button
-            onClick={() => document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' })}
+            onClick={() => document.querySelector('#main-projects')?.scrollIntoView({ behavior: 'smooth' })}
             size="lg"
           >
-            View Projects
+            View My Main Projects
           </Button>
           <Button
             variant="outline"

@@ -47,7 +47,7 @@ const deployedProjects = [
 
 export default function ProjectPreviews() {
   return (
-    <section id="project-previews" className="py-20">
+    <section id="main-projects" className="py-20">
       <div className="container mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
